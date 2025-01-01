@@ -1,0 +1,32 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Local development files
+db.sqlite3
+local_settings.py
+
+# Static files
+staticfiles/
+
+# Log files
+*.log
+logs/
+Log/
+log/*
+access.log*
+
+# Test output
+.coverage
+nosetests.xml
+*.cover
+*.key
+*.crt
+
+# pipenv
+Pipfile.lock
+
+# VS Code files
+.vscode/
+*.code-workspace

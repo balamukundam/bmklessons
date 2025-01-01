@@ -1,0 +1,75 @@
+{% extends 'lessons/base.html' %}
+
+{% block content %}
+
+
+      
+        <div class="row">
+          <div class="col-12">
+            {% if lesson %}
+
+            <div class="card bg-light ms-4 me-4 mb-4">
+              <div class="card-header">{{ lesson.title }}</div>
+              <div class="card-body">
+                <p class="card-title div-telugugen3">{{ lesson.json_data.TitleT}}</p>
+                {% for x in lesson.json_data.Blogs %}
+                {% if x.image %}
+                <div class="row">
+                {% if x.left %}            
+                    <div class="col-9">
+                        {% for y in x.lines %}         
+                        <p class="card-text div-telugugen telugup">{{y}}</p>
+                        {% endfor %}
+                    </div>
+                    <div class="col-3">
+                    <img src={{x.image}} class="rounded img-fluid" alt="...">
+                    </div>
+                {% else %}
+                    <div class="col-3">
+                        <img src={{x.image}} class="rounded img-fluid" alt="...">
+                    </div>
+                    <div class="col-9">
+                        {% for y in x.lines %}         
+                        <p class="card-text div-telugugen telugup">{{y}}</p>
+                        {% endfor %}
+                    </div>                    
+                {% endif %}
+
+                </div>
+                {% else %}
+                    {% for y in x.lines %}         
+                    <p class="card-text div-telugugen telugup">{{y}}</p>
+                    {% endfor %}
+                {% endif %}
+
+                
+                {% endfor %}                
+              </div>           
+
+            </div>
+
+            {% if lesson.json_data.Questions %}
+            <div class="card bg-light ms-4 me-4 mb-4">
+              
+              <div class="card-header">Questions</div>
+              <div class="card-body">
+                {% for y in lesson.json_data.Questions %}         
+                    <p class="card-text telugup">{{y}}</p>
+                {% endfor %}
+
+              </div>            
+            
+            </div>
+            {% endif %} 
+
+            {% else %}
+            <h5 class="alert alert-primary ms-4 me-4">No Lessons Data</h5>
+            {% endif %}
+            
+
+          </div>
+        </div>
+
+      
+
+{% endblock %}

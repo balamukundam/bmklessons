@@ -1,0 +1,194 @@
+{% extends 'base.html'}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Balamukundam</title>
+<link href="{% static 'css/bootstrap.min.css' %}" rel="stylesheet">
+<link href="{% static 'css/telugu.css' %}" rel="stylesheet">
+</head>
+<body class="d-flex flex-column min-vh-100">
+    <nav class="navbar navbar-expand-lg bg-primary" data-bs-theme="dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Balamukundam</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarColor01">
+            <ul class="navbar-nav me-auto">
+              <li class="nav-item">
+                <a class="nav-link active" href="#">Home
+                  <span class="visually-hidden">(current)</span>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#"><i class="fas fa-book fa-lg"></i> Lessons</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Resources</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Media</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Books</a>
+                <div class="dropdown-menu">
+                  <a class="dropdown-item" href="#">Action</a>
+                  <a class="dropdown-item" href="#">Another action</a>
+                  <a class="dropdown-item" href="#">Something else here</a>
+                  <div class="dropdown-divider"></div>
+                  <a class="dropdown-item" href="#">Separated link</a>
+                </div>
+              </li>
+            </ul>
+            <form class="d-flex">
+              <input class="form-control me-sm-2" type="search" placeholder="Search">
+              <button class="btn btn-secondary my-2 my-sm-0" type="submit">Search</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+      <div class="container-fluid" style = "min-width: 210mm; width: 90%;">
+        <h3 class="m-4">Welcome</h3>
+        <div class="row">
+          <div class="col-12">
+            {% if lesson %}
+
+            <div class="card bg-light ms-4 me-4 mb-4">
+              <div class="card-header">Lesson Records</div>
+              <div class="card-body row">
+                <div class="col-9">
+                  <h4 class="card-title">Light card title</h4>
+                  <p class="card-text div-telugugen">మాతృదేశానికి ఎంతో దూరంలో ఉన్న మన అందరికి, మన పిల్లలకి, మన మాతృభాష నేర్పించాలనే సత్సంకల్పంతో మొదలైనది బాలముకుందం. బాలముకుందంలో మేము పిల్లలకి తెలుగు చదవడం, వ్రాయడం, సంభాషించడం మరియు తెలుగు పాటలను, పద్యాలను, నీతి కధలను నేర్పడం జరుగుతోంది. పిల్లల వయసు మరియు వారి సామర్ధ్యంని దృష్టిలో ఉంచుకొని శేషాద్రి, గరుడాద్రి, వృషభాద్రి, వృషాద్రి, అంజనాద్రి, నారయణాద్రి మరియు వెంకటాద్రి తరగతులలో విభజించడం జరిగింది. ప్రథమ తరగతైన శేషాద్రిలో చిన్న చిన్న మాటలు, అంకెలు, బొమ్మలు గుర్తించుట.</p>
+
+                </div>
+                <div class="col-3">
+                  <img src="https://upload.wikimedia.org/wikipedia/commons/b/b6/Image_created_with_a_mobile_phone.png" class="rounded img-fluid" alt="...">
+                </div>                
+              </div>
+              <div class="card-body row">
+                <div class="col-3">
+                  <img src="https://upload.wikimedia.org/wikipedia/commons/b/b6/Image_created_with_a_mobile_phone.png" class="rounded img-fluid" alt="...">
+                </div>
+
+                <div class="col-9">
+                  <h4 class="card-title">Light card title</h4>
+                  <p class="card-text">{{ lesson.json_data }}</p>
+
+                </div>
+              </div>
+
+              
+
+            </div>
+            <div class="card bg-light ms-4 me-4 mb-4">
+              <div class="card-header">Lesson Records</div>
+              <div class="card-body">
+                <p class="card-text">
+                  <table class="table table-hover">
+                    <thead>
+                      <tr>
+                        <th scope="col">Type</th>
+                        <th scope="col">Column heading</th>
+                        <th scope="col">Column heading</th>
+                        <th scope="col">Column heading</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr class="table-active">
+                        <th scope="row">Active</th>
+                        <td>Column content</td>
+                        <td>Column content</td>
+                        <td>Column content</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Default</th>
+                        <td>Column content</td>
+                        <td>Column content</td>
+                        <td>Column content</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Default</th>
+                        <td>Column content</td>
+                        <td>Column content</td>
+                        <td>Column content</td>
+                      </tr>
+                      <tr class="table-primary">
+                        <th scope="row">Primary</th>
+                        <td>Column content</td>
+                        <td>Column content</td>
+                        <td>Column content</td>
+                      </tr>
+                      <tr class="table-secondary">
+                        <th scope="row">Secondary</th>
+                        <td>Column content</td>
+                        <td>Column content</td>
+                        <td>Column content</td>
+                      </tr>
+                      <tr class="table-success">
+                        <th scope="row">Success</th>
+                        <td>Column content</td>
+                        <td>Column content</td>
+                        <td>Column content</td>
+                      </tr>
+                      <tr class="table-danger">
+                        <th scope="row">Danger</th>
+                        <td>Column content</td>
+                        <td>Column content</td>
+                        <td>Column content</td>
+                      </tr>
+                      <tr class="table-warning">
+                        <th scope="row">Warning</th>
+                        <td>Column content</td>
+                        <td>Column content</td>
+                        <td>Column content</td>
+                      </tr>
+                      <tr class="table-info">
+                        <th scope="row">Info</th>
+                        <td>Column content</td>
+                        <td>Column content</td>
+                        <td>Column content</td>
+                      </tr>
+                      <tr class="table-light">
+                        <th scope="row">Light</th>
+                        <td>Column content</td>
+                        <td>Column content</td>
+                        <td>Column content</td>
+                      </tr>
+                      <tr class="table-dark">
+                        <th scope="row">Dark</th>
+                        <td>Column content</td>
+                        <td>Column content</td>
+                        <td>Column content</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </p>
+              </div>
+            </div>
+
+            {% else %}
+            <h5 class="alert alert-primary ms-4 me-4">No Lessons Data</h5>
+            {% endif %}
+            
+
+          </div>
+        </div>
+
+      </div>
+
+      <footer class="mt-auto mb-4">
+        <div class="text-center">
+          <span>
+            Copyright &copy; <script>document.write(new Date().getFullYear())</script> Balamukundam
+          </span>
+           
+          
+        </div>
+
+      </footer>
+	
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

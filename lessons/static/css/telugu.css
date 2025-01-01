@@ -1,0 +1,255 @@
+@font-face {
+    font-family: mHindiFnt1;
+    font-style: normal;
+    font-weight: 300;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/notoserifdevanagari/v28/x3dNcl3IZKmUqiMk48ZHXJ5jwU-DZGRSaQ4Hh2dGyFzPLcQPVbnRH-xEMqTN.woff2) format("woff2");
+    unicode-range: U+0900-097F,U+1CD0-1CF9,U+200C-200D,U+20A8,U+20B9,U+25CC,U+A830-A839,U+A8E0-A8FF
+}
+
+@font-face {
+    font-family: mHindiFnt2;
+    font-style: normal;
+    font-weight: 300;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/mukta/v14/iJWHBXyXfDDVXbFqj2mc8WDm7Q.woff2) format("woff2");
+    unicode-range: U+0900-097F,U+1CD0-1CF9,U+200C-200D,U+20A8,U+20B9,U+25CC,U+A830-A839,U+A8E0-A8FF
+}
+
+@font-face {
+    font-family: mHindiFnt3;
+    font-style: normal;
+    font-weight: 400;
+    font-stretch: 100%;
+    src: url(https://fonts.gstatic.com/s/notosansdevanagari/v25/TuGoUUFzXI5FBtUq5a8bjKYTZjtRU6Sgv3NaV_SNmI0b8QQCQmHn6B2OHjbL_08AlXQl--Y5oWoW.woff2) format("woff2");
+    unicode-range: U+0900-097F,U+1CD0-1CF9,U+200C-200D,U+20A8,U+20B9,U+25CC,U+A830-A839,U+A8E0-A8FF
+}
+
+@font-face {
+    font-family: mTelFnt1;
+    src: url(https://cdn.jsdelivr.net/gh/googlei18n/noto-fonts/unhinted/otf/NotoSansTelugu/NotoSansTelugu-Regular.otf)
+}
+
+@font-face {
+    font-family: mTelFntScr1;
+    font-style: normal;
+    font-weight: 400;
+    src: url(https://fonts.gstatic.com/s/akayatelivigala/v9/lJwc-oo_iG9wXqU3rCTD395tp0uiTcnXsbH0.woff2) format("woff2");
+    unicode-range: U+0951-0952,U+0964-0965,U+0C00-0C7F,U+1CDA,U+200C-200D,U+25CC
+}
+
+@font-face {
+    font-family: mTelFnt2;
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/ntr/v10/RLpzK5Xy0ZjSA2Jt1TA.woff2) format("woff2");
+    unicode-range: U+0951-0952,U+0964-0965,U+0C00-0C7F,U+1CDA,U+200C-200D,U+25CC
+}
+
+@font-face {
+    font-family: mTelFnt3;
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/tenaliramakrishna/v7/raxgHj6Yt9gAN3LLKs0BZVMo8jmwn1-MM5_rYFE.woff2) format("woff2");
+    unicode-range: U+0951-0952,U+0964-0965,U+0C00-0C7F,U+1CDA,U+200C-200D,U+25CC
+}
+
+@font-face {
+    font-family: NotoSansTelugu;
+    src: url(https://cdn.jsdelivr.net/gh/googlei18n/noto-fonts/unhinted/otf/NotoSansTelugu/NotoSansTelugu-Regular.otf);
+    unicode-range: U+0951-0952,U+0964-0965,U+0C00-0C7F,U+1CDA,U+200C-200D,U+25CC
+}
+
+@font-face {
+    font-family: Siddhanta;
+    src: url(https://cdn.jsdelivr.net/gh/googlei18n/noto-fonts/unhinted/otf/NotoSansTelugu/NotoSansTelugu-Regular.otf);
+    unicode-range: U+0900-097F,U+1CD0-1CF6,U+1CF8-1CF9,U+200C-200D,U+20A8,U+20B9,U+25CC,U+A830-A839,U+A8E0-A8FB
+}
+
+@font-face {
+    font-family: Siddhanta12;
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/notosans/v12/o-0IIpQlx3QUlC5A4PNr5DRAW_0.woff2) format("woff2");
+    unicode-range: U+0900-097F,U+1CD0-1CF6,U+1CF8-1CF9,U+200C-200D,U+20A8,U+20B9,U+25CC,U+A830-A839,U+A8E0-A8FB
+}
+
+@font-face {
+    font-family: TeluguHandWrite;
+    font-style: normal;
+    font-weight: 400;
+    src: url(https://fonts.gstatic.com/s/akayatelivigala/v9/lJwc-oo_iG9wXqU3rCTD395tp0uiTcnXsbH0.woff2) format("woff2");
+    unicode-range: U+0951-0952,U+0964-0965,U+0C00-0C7F,U+1CDA,U+200C-200D,U+25CC
+}
+
+@font-face {
+    font-family: TeluguNTR;
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/ntr/v10/RLpzK5Xy0ZjSA2Jt1TA.woff2) format("woff2");
+    unicode-range: U+0951-0952,U+0964-0965,U+0C00-0C7F,U+1CDA,U+200C-200D,U+25CC
+}
+
+@font-face {
+    font-family: TeluguTenaliRama;
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/tenaliramakrishna/v7/raxgHj6Yt9gAN3LLKs0BZVMo8jmwn1-MM5_rYFE.woff2) format("woff2");
+    unicode-range: U+0951-0952,U+0964-0965,U+0C00-0C7F,U+1CDA,U+200C-200D,U+25CC
+}
+
+@font-face {
+    font-family: mSankritFnt1;
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/notosans/v12/o-0IIpQlx3QUlC5A4PNr5DRAW_0.woff2) format("woff2");
+    unicode-range: u+0900-097f,u+1cd0-1cf6,u+1cf8-1cf9,u+200c-200d,u+20a8,u+20b9,u+25cc,u+a830-a839,u+a8e0-a8fb
+}
+
+.telugup {
+    font-size: 2vw; /* default font size */
+  }
+  
+  @media (max-width:500px) {
+    .telugup {
+      font-size: 16px; /* minimum font size */
+    }
+  }
+
+.div-telugugen {
+    padding: 0,0,0,0;
+    font-family: mTelFnt1;
+    line-height: 1.5
+}
+
+.div-telugugen3 {
+    padding: 0,0,0,0;
+    font-family: mTelFnt1;
+    font-size: 3vw;
+    line-height: 3
+}
+
+.div-telugu10 {
+    padding: 0,0,0,0;
+    font-family: mTelFnt1;
+    font-size: 10px;
+    line-height: 1.5
+}
+
+.div-telugu16 {
+    padding: 0,0,0,0;
+    font-family: mTelFnt1;
+    font-size: 16px;
+    line-height: 1.5
+}
+
+.div-telugu20 {
+    padding: 0,0,0,0;
+    font-family: mTelFnt1;
+    font-size: 20px;
+    line-height: 1.5
+}
+
+.div-telugu30 {
+    padding: 0,0,0,0;
+    font-family: mTelFnt1;
+    font-size: 30px;
+    line-height: 1.5
+}
+
+.div-telugu40 {
+    padding: 0,0,0,0;
+    font-family: mTelFnt1;
+    font-size: 40px;
+    line-height: 1.5
+}
+
+.div-telugu60 {
+    padding: 0,0,0,0;
+    font-family: mTelFnt1;
+    font-size: 60px;
+    line-height: 1.5
+}
+
+.div-telugu100 {
+    padding: 0,0,0,0;
+    font-family: mTelFnt1;
+    font-size: 100px;
+    line-height: 1.5
+}
+
+.div-hindi10,.div-hindi16 {
+    padding: 0,0,0,0;
+    font-family: mHindiFnt1;
+    font-size: 10px;
+    line-height: 1.5
+}
+
+.div-hindi20 {
+    padding: 0,0,0,0;
+    font-family: mHindiFnt1;
+    font-size: 20px;
+    line-height: 1.5
+}
+
+.div-hindi30 {
+    padding: 0,0,0,0;
+    font-family: mHindiFnt1;
+    font-size: 30px;
+    line-height: 1.5
+}
+
+.div-hindi40 {
+    padding: 0,0,0,0;
+    font-family: mHindiFnt1;
+    font-size: 40px;
+    line-height: 1.5
+}
+
+.div-hindi60 {
+    padding: 0,0,0,0;
+    font-family: mHindiFnt1;
+    font-size: 60px;
+    line-height: 1.5
+}
+
+.div-hindi100 {
+    padding: 0,0,0,0;
+    font-family: mHindiFnt1;
+    font-size: 100px;
+    line-height: 1.5
+}
+
+.mat-mdc-floating-label {
+    max-width: 100%
+}
+
+.teltext {
+    text-align: justify;
+    font-family: NotoSansTelugu;
+    line-height: 125%;
+    font-size: 22px;
+    margin: 10px
+}
+
+.santext {
+    text-align: justify;
+    font-family: mSankritFnt1;
+    line-height: 125%;
+    font-size: 22px;
+    margin: 10px
+}
+
+.engtext {
+    text-align: justify;
+    font-family: Verdana,sans-serif;
+    line-height: 125%;
+    font-size: 18px;
+    margin: 10px
+}
